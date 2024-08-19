@@ -54,11 +54,11 @@
             <div class="swiper-slide"><img src="assets/img/AluraBooks/Portugol.png"></div>
             <div class="swiper-slide"><img src="assets/img/AluraBooks/Nodejs.svg.png"></div>
 
-            <div class="swiper-pagiation"></div>
+            <div class="swiper-pagination"></div>
 
             <div class="swiper-button-prev"></div>
 
-            <div class="swiper-next"></div>
+            <div class="swiper-button-next"></div>
 
             <div class="swiper-scrollbar"></div>
                     </div>
@@ -67,14 +67,22 @@
         <section>
 
         </section>
+    <html lang="en">
+    <body>
         
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
                 spaceBetween: 10,
                 slidesPerView: 3,
-                },
-            );
+                pagination:{
+                    el: "swiper-pagination",
+                    type: "bullets",
+                }
+                });
         </script>
 </body>
+
+
 </html>
